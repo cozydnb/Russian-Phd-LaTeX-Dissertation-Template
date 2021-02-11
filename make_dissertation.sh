@@ -1,1 +1,1 @@
-latexmk -pdf -pdflatex="xelatex %O %S" dissertation
+latexmk -pdf -f -pdflatex="xelatex %O %S" dissertation
