@@ -1,595 +1,619 @@
 %--------------------------------------------------------------------
 % Structure
 
+% 0. Software failures 
 % 1. Analyzers 
 % 2. Coding Standarts 
 % 3. Internet resources 
 % 4. Articles 
+%    - Coding Standarts
+%    - Generations of Static Analysis
+%    - Benchmarks
+%    - Testing
+%    - IR Analysis
+%    - Binary Analysis
 % 5. Books 
 % 6. Standarts
 % 7. Conferences
 % Examples 
 
 %--------------------------------------------------------------------
+% 0. Software failures 
+@inproceedings{Lions1996ARIANE5F,
+  title         = {ARIANE 5 Flight 501 Failure: Report by the Enquiry Board},
+  author        = {J. L. Lions},
+  year          = {1996}
+}
+
+%--------------------------------------------------------------------
 % 1. Analazers
 @online{Klocwork,
-  title = {Rogue Wave Software, Klocwork},
-  author = {Perforce-Software-Inc.},
-  medium = {Электронный ресурс},
-  url = {https://www.perforce.com/products/klocwork},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {Rogue Wave Software, Klocwork},
+  author        = {Perforce-Software-Inc.},
+  medium        = {Электронный ресурс},
+  url           = {https://www.perforce.com/products/klocwork},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 @online{Codesonar,
-  title = {GrammaTech, CodeSonar},
-  author = {GrammaTech-Inc.},
-  medium = {Электронный ресурс},
-  url = {https://www.grammatech.com/codesonar-cc},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {GrammaTech, CodeSonar},
+  author        = {GrammaTech-Inc.},
+  medium        = {Электронный ресурс},
+  url           = {https://www.grammatech.com/codesonar-cc},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 @online{Polyspace,
-  title = {Mathworks, Polyspace Bug Finder},
-  author = {The-MathWorks-Inc.},
-  medium = {Электронный ресурс},
-  url = {https://www.mathworks.com/products/polyspace-bug-finder.html},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {Mathworks, Polyspace Bug Finder},
+  author        = {The-MathWorks-Inc.},
+  medium        = {Электронный ресурс},
+  url           = {https://www.mathworks.com/products/polyspace-bug-finder.html},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 @online{Coverity,
-  title = {Synopsys, Coverity},
-  author = {Synopsys-Inc.},
-  medium = {Электронный ресурс},
-  url = {https://scan.coverity.com},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {Synopsys, Coverity},
+  author        = {Synopsys-Inc.},
+  medium        = {Электронный ресурс},
+  url           = {https://scan.coverity.com},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 @online{Astree,
-  title = {AbsInt Angewandte Informatik GmbH, Astree},
-  author = {AbsInt},
-  medium = {Электронный ресурс},
-  url = {https://www.absint.com/astree/index.htm},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {AbsInt Angewandte Informatik GmbH, Astree},
+  author        = {AbsInt},
+  medium        = {Электронный ресурс},
+  url           = {https://www.absint.com/astree/index.htm},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 @online{Frama,
-  title = {The Frama-C platform web site, Frama-C},
-  author = {FRAMA-C},
-  medium = {Электронный ресурс},
-  url = {https://frama-c.com},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {The Frama-C platform web site, Frama-C},
+  author        = {FRAMA-C},
+  medium        = {Электронный ресурс},
+  url           = {https://frama-c.com},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 @online{Polyspace2prover,
-  title = {Mathworks, Polyspace Code Prover},
-  author = {The-MathWorks-Inc.},
-  medium = {Электронный ресурс},
-  url = {https://www.mathworks.com/products/polyspace-code-prover.html},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {Mathworks, Polyspace Code Prover},
+  author        = {The-MathWorks-Inc.},
+  medium        = {Электронный ресурс},
+  url           = {https://www.mathworks.com/products/polyspace-code-prover.html},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 @online{Codepeer,
-  title = {CodePeer},
-  author = {AdaCore},
-  medium = {Электронный ресурс},
-  url = {https://www.adacore.com/codepeer},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {CodePeer},
+  author        = {AdaCore},
+  medium        = {Электронный ресурс},
+  url           = {https://www.adacore.com/codepeer},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 @online{Pylint,
-  title = {Pylint},
-  author = {Pylint-Community},
-  medium = {Электронный ресурс},
-  url = {https://www.pylint.org},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {Pylint},
+  author        = {Pylint-Community},
+  medium        = {Электронный ресурс},
+  url           = {https://www.pylint.org},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 % template
 @online{T1,
-  title = {},
-  author = {},
-  medium = {Электронный ресурс},
-  url = {},
-  urldate = {03.01.2021},
-  language = {english}
+  title         = {},
+  author        = {},
+  medium        = {Электронный ресурс},
+  url           = {},
+  urldate       = {03.01.2021},
+  language      = {english}
 }
 
 %--------------------------------------------------------------------
 % 2. Coding standarts
 @BOOK{Misrac1998,
- % author = {Motor Industry Software Reliability Association},
- title = {MISRA-C:1998 Guidelines for the use of the C language in vehicle based sofware},
- address = {Nuneaton, Warwickshire CV10 0TU, UK},
- publisher = {MIRA Ltd},
- year = {1998},
- %numpages = {116},
- %isbn = {978-0-9524156-4-0},
- language = {english}
+  title         = {MISRA-C:1998 Guidelines for the use of the C language in vehicle based sofware},
+  address       = {Nuneaton, Warwickshire CV10 0TU, UK},
+  publisher     = {MIRA Ltd},
+  year          = {1998},
+  language      = {english}
 }
 
 @BOOK{Misrac2004,
- % author = {Motor Industry Software Reliability Association},
- title = {MISRA-C:2004 Guidelines for the use of the C language in critical systems},
- address = {Nuneaton, Warwickshire CV10 0TU, UK},
- publisher = {MIRA Ltd},
- year = {2004},
- %numpages = {116},
- %isbn = {978-0-9524156-4-0},
- language = {english}
+  title         = {MISRA-C:2004 Guidelines for the use of the C language in critical systems},
+  address       = {Nuneaton, Warwickshire CV10 0TU, UK},
+  publisher     = {MIRA Ltd},
+  year          = {2004},
+  language      = {english}
 }
 
 @BOOK{Misrac2008,
- % author = {Motor Industry Software Reliability Association},
- title = {MISRA C++:2008 Guidelines for the use of the C++ language in critical systems},
- address = {Nuneaton, Warwickshire CV10 0TU, UK},
- publisher = {MIRA Ltd},
- year = {2008},
- %numpages = {116},
- %isbn = {978-0-9524156-4-0},
- language = {english}
+  % author      = {Motor Industry Software Reliability Association},
+  title         = {MISRA C++:2008 Guidelines for the use of the C++ language in critical systems},
+  address       = {Nuneaton, Warwickshire CV10 0TU, UK},
+  publisher     = {MIRA Ltd},
+  year          = {2008},
+  language      = {english}
 }
 
 @BOOK{Misrac2012,
- % author = {Motor Industry Software Reliability Association},
- title = {MISRA C:2012 Guidelines for the use of the C++ language in critical systems},
- address = {Nuneaton, Warwickshire CV10 0TU, UK},
- publisher = {MIRA Ltd},
- year = {2012},
- %numpages = {116},
- %isbn = {978-0-9524156-4-0},
- language = {english}
+  title         = {MISRA C:2012 Guidelines for the use of the C++ language in critical systems},
+  address       = {Nuneaton, Warwickshire CV10 0TU, UK},
+  publisher     = {MIRA Ltd},
+  year          = {2012},
+  language      = {english}
 }
 
 @online{barrc,
-  title = {BARR-C:2018 - Embedded C Coding Standard},
-  author = {M. Barr},
-  year = {2018},
-  medium = {Электронный ресурс},
-  url = {https://barrgroup.com},
-  urldate = {04.02.2021},
-  language = {english}
+  title         = {BARR-C:2018 - Embedded C Coding Standard},
+  author        = {M. Barr},
+  year          = {2018},
+  medium        = {Электронный ресурс},
+  url           = {https://barrgroup.com},
+  urldate       = {04.02.2021},
+  language      = {english}
 }
 
 @BOOK{CERT,
-  %author = {},
-  title = {SEI CERT C Coding Standard: Rules for Developing Safe, Reliable, and Secure Systems, 2016th ed.},
-  %address = {},
-  publisher = {Software Engineering, Carnegie Mellon University},
-  year = {2016},
-  % numpages = {},
-  language = {english}
+  title         = {SEI CERT C Coding Standard: Rules for Developing Safe, Reliable, and Secure Systems, 2016th ed.},
+  publisher     = {Software Engineering, Carnegie Mellon University},
+  year          = {2016},
+  language      = {english}
 }
 
 @BOOK{JPL,
-  %author = {},
-  title = {JPL institutional coding standard for the C programming language},
-  %address = {},
-  publisher = {Jet Propulsion Laboratory, California Institute of Technology},
-  year = {2009},
-  % numpages = {},
-  language = {english}
+  title         = {JPL institutional coding standard for the C programming language},
+  publisher     = {Jet Propulsion Laboratory, California Institute of Technology},
+  year          = {2009},
+  language      = {english}
 }
 
 @book{autosar,
-  %author = {},
-  title = {guidelines for the use of the c++14 language in critical and safety-related systems},
-  %address = {},
-  publisher = {autosar},
-  year = {2017},
-  % numpages = {},
-  language = {english}
+  title         = {guidelines for the use of the c++14 language in critical and safety-related systems},
+  publisher     = {autosar},
+  year          = {2017},
+  language      = {english}
 }
 
 @book{highIntegrity,
-  %author = {},
-  title = {High Integrity C++},
-  address = {United Kingdom},
-  publisher = {Programming Research Ltd},
-  year = {2013},
-  numpages = {155},
-  language = {english}
+  title         = {High Integrity C++},
+  address       = {United Kingdom},
+  publisher     = {Programming Research Ltd},
+  year          = {2013},
+  numpages      = {155},
+  language      = {english}
 }
 
 @book{escrC,
-  %author = {},
-  title = {Embedded System development Coding Reference guide, C Language Edition},
-  address = {Japan},
-  publisher = {Software Reliability Enhancement Center, Technology Headquarters, Information-technology Promotion Agency},
-  year = {2018},
-  numpages = {206},
-  language = {english}
+  title         = {Embedded System development Coding Reference guide, C Language Edition},
+  address       = {Japan},
+  publisher     = {Software Reliability Enhancement Center, Technology Headquarters, Information-technology Promotion Agency},
+  year          = {2018},
+  numpages      = {206},
+  language      = {english}
 }
 
 @book{escrCPP,
-  %author = {},
-  title = {Embedded System development Coding Reference guide, C++ Language Edition},
-  address = {Japan},
-  publisher = {Software Reliability Enhancement Center, Technology Headquarters, Information-technology Promotion Agency},
-  year = {2013},
-  numpages = {222},
-  language = {english}
+  title         = {Embedded System development Coding Reference guide, C++ Language Edition},
+  address       = {Japan},
+  publisher     = {Software Reliability Enhancement Center, Technology Headquarters, Information-technology Promotion Agency},
+  year          = {2013},
+  numpages      = {222},
+  language      = {english}
 }
 
 @article{powerOfTen,
-  %author   = {},
-  title    = {The Power of Ten: Rules for Developing Safety-Critical Code},
-  journal  = {IEEE Computer},
-  year     = {2006},
-  %number   = {},
-  pages    = {93-95},
-  %month    = {},
-  %note     = {},
-  %volume   = {},
-  language = {english}
+  title         = {The Power of Ten: Rules for Developing Safety-Critical Code},
+  journal       = {IEEE Computer},
+  year          = {2006},
+  pages         = {93-95},
+  language      = {english}
 }
 
 @BOOK{JSF,
-  title = {JSF Air vehicle C++ coding standards for the system development and demonstration program},
-  % address = {},
-  publisher = {Lockheed Martin Corporation},
-  year = {2005},
-  % numpages = {},
-  language = {english}
+  title         = {JSF Air vehicle C++ coding standards for the system development and demonstration program},
+  publisher     = {Lockheed Martin Corporation},
+  year          = {2005},
+  language      = {english}
 }
 
 % template
 @BOOK{T2,
-  author = {},
-  title = {},
-  address = {},
-  publisher = {},
-  year = {},
-  numpages = {},
-  language = {}
+  author        = {},
+  title         = {},
+  address       = {},
+  publisher     = {},
+  year          = {},
+  numpages      = {},
+  language      = {}
 }
 
 % template
 @online{T21,
-  title = {},
-  author = {},
-  medium = {Электронный ресурс},
-  url = {},
-  urldate = {},
-  language = {english}
+  title         = {},
+  author        = {},
+  medium        = {Электронный ресурс},
+  url           = {},
+  urldate       = {},
+  language      = {english}
 }
 
 
 %--------------------------------------------------------------------
 % 3. Internet resources 
 @online{Dijkstra,
-  title = {On the reliability of the programs},
-  author = {E. W. Dijkstra},
-  medium = {Электронный ресурс},
-  url = {https://www.cs.utexas.edu/users/EWD/ewd03xx/EWD303.PDF},
-  urldate = {07.01.2021},
-  language = {english}
+  title         = {On the reliability of the programs},
+  author        = {E. W. Dijkstra},
+  medium        = {Электронный ресурс},
+  url           = {https://www.cs.utexas.edu/users/EWD/ewd03xx/EWD303.PDF},
+  urldate       = {07.01.2021},
+  language      = {english}
 }
 
 @online{TiobeIndex,
-  title = {TIOBE Index for January 2021},
-  author = {TIOBE Software BV},
-  medium = {Электронный ресурс},
-  url = {https://www.tiobe.com/tiobe-index/},
-  urldate = {02.02.2021},
-  language = {english}
+  title         = {TIOBE Index for January 2021},
+  author        = {TIOBE Software BV},
+  medium        = {Электронный ресурс},
+  url           = {https://www.tiobe.com/tiobe-index/},
+  urldate       = {02.02.2021},
+  language      = {english}
 }
 
 @online{ioccc,
-  title = {The International Obfuscated C Code Contest},
-  author = {Leo Broukhis, Simon Cooper, Landon Curt Noll},
-  medium = {Электронный ресурс},
-  url = {http://www.ioccc.org/years.html#2020},
-  urldate = {02.02.2021},
-  language = {english}
+  title         = {The International Obfuscated C Code Contest},
+  author        = {Leo Broukhis, Simon Cooper, Landon Curt Noll},
+  medium        = {Электронный ресурс},
+  url           = {http://www.ioccc.org/years.html#2020},
+  urldate       = {02.02.2021},
+  language      = {english}
 }
 
 @online{NIST,
-  title = {NIST. National Institute of Standards and Technology SAMATE Reference Dataset (SRD) project},
-  % author = {},
-  medium = {Электронный ресурс},
-  url = {http://samate.nist.gov/SRD},
-  urldate = {10.02.2021},
-  language = {english}
+  title         = {NIST. National Institute of Standards and Technology SAMATE Reference Dataset (SRD) project},
+  medium        = {Электронный ресурс},
+  url           = {http://samate.nist.gov/SRD},
+  urldate       = {10.02.2021},
+  language      = {english}
 }
 
 @online{MITRE,
-  title = {Common Weakness Enumeration},
-  author = {MITRE Corporation},
-  medium = {Электронный ресурс},
-  url = {http://cwe.mitre.org/},
-  urldate = {10.02.2021},
-  language = {english}
+  title         = {Common Weakness Enumeration},
+  author        = {MITRE Corporation},
+  medium        = {Электронный ресурс},
+  url           = {http://cwe.mitre.org/},
+  urldate       = {10.02.2021},
+  language      = {english}
 }
 
 @online{RiceT,
-  title = {Rice's theorem},
-  % author = {},
-  medium = {Электронный ресурс},
-  url = {https://en.wikipedia.org/wiki/Rice%27s_theorem},
-  urldate = {12.03.2021},
-  language = {english}
+  title         = {Rice's theorem},
+  medium        = {Электронный ресурс},
+  url           = {https://en.wikipedia.org/wiki/Rice%27s_theorem},
+  urldate       = {12.03.2021},
+  language      = {english}
 }
 
 % template
 @online{T3,
-  title = {},
-  author = {},
-  medium = {Электронный ресурс},
-  url = {},
-  urldate = {},
-  language = {english}
+  title         = {},
+  author        = {},
+  medium        = {Электронный ресурс},
+  url           = {},
+  urldate       = {},
+  language      = {english}
 }
 
 %--------------------------------------------------------------------
 % 4. Articles
+
+% Coding Standarts
 @misc{bagnara2020barrc2018,
-  title = {BARR-C:2018 and MISRA C:2012: Synergy Between the Two Most Widely Used C Coding Standards}, 
-  author = {Roberto Bagnara and Michael Barr and Patricia M. Hill},
-  year = {2020},
-  eprint = {2003.06893},
+  title         = {BARR-C:2018 and MISRA C:2012: Synergy Between the Two Most Widely Used C Coding Standards}, 
+  author        = {Roberto Bagnara and Michael Barr and Patricia M. Hill},
+  year          = {2020},
+  eprint        = {2003.06893},
   archivePrefix = {arXiv},
-  primaryClass = {cs.PL}
+  primaryClass  = {cs.PL}
 }
 
 @misc{bagnara2018misra,
-  title={The MISRA C Coding Standard and its Role in the Development and Analysis of Safety- and Security-Critical Embedded Software},
-  author={Roberto Bagnara and Abramo Bagnara and Patricia M. Hill},
-  year={2018},
-  eprint={1809.00821},
-  archivePrefix={arXiv},
-  primaryClass={cs.PL}
+  title         = {The MISRA C Coding Standard and its Role in the Development and Analysis of Safety- and Security-Critical Embedded Software},
+  author        = {Roberto Bagnara and Abramo Bagnara and Patricia M. Hill},
+  year          = {2018},
+  eprint        = {1809.00821},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.PL}
 }
 
+% Generations of Static Analysis
+@INPROCEEDINGS{Johnson78lint,
+    author      = {S. C. Johnson},
+    title       = {Lint, a C Program Checker},
+    booktitle   = {COMP. SCI. TECH. REP},
+    year        = {1978},
+    pages       = {78--1273},
+    publisher   = {}
+}
+
+% Benchmarks 
 @article{Zitser,
-  author   = {M. Zitser and  R. Lippmann},
-  title    = {Testing static analysis tools using exploitable buffer overflows from open source code},
-  journal  = {International Symposium on Foundations of Software Engineering},
-  year     = {2004},
-  % number   = {},
-  pages    = {97–106},
-  % month    = {},
-  % note     = {},
-  % volume   = {},
-  language = {english}
+  author        = {M. Zitser and  R. Lippmann},
+  title         = {Testing static analysis tools using exploitable buffer overflows from open source code},
+  journal       = {International Symposium on Foundations of Software Engineering},
+  year          = {2004},
+  pages         = {97–106},
+  language      = {english}
 }
 
 @article{Kratkiewicz,
-  author   = {K. Kratkiewicz and R. Lippmann},
-  title    = {Using a diagnostic corpus of C programs to evaluate buffer overflow detection by static analysis tools},
-  journal  = {Workshop on the Evaluation of Software Defect Detection Tools},
-  year     = {2005},
-  % number   = {},
-  % pages    = {},
-  month    = {6},
-  % note     = {},
-  % volume   = {},
-  language = {english}
+  author        = {K. Kratkiewicz and R. Lippmann},
+  title         = {Using a diagnostic corpus of C programs to evaluate buffer overflow detection by static analysis tools},
+  journal       = {Workshop on the Evaluation of Software Defect Detection Tools},
+  year          = {2005},
+  month         = {6},
+  language      = {english}
 }
 
 @article{BugBench,
-  author   = {S. Lu and Z. Li},
-  title    = {BugBench: A benchmark for evaluating bug detection tools},
-  journal  = {In Proc. of Workshop on the Evaluation of Software Defect Detection Tools},
-  year     = {2005},
-  % number   = {},
-  % pages    = {},
-  month    = {6},
-  % note     = {},
-  % volume   = {},
-  language = {english}
+  author        = {S. Lu and Z. Li},
+  title         = {BugBench: A benchmark for evaluating bug detection tools},
+  journal       = {In Proc. of Workshop on the Evaluation of Software Defect Detection Tools},
+  year          = {2005},
+  month         = {6},
+  language      = {english}
 }
 
 @article{Faultbench,
-  author   = {S. Heckman and L. Williams.},
-  title    = {On establishing a benchmark for evaluating static analysis alert prioritization and classification techniques},
-  journal  = {In Proc. of the Second ACM-IEEE International Symposium on Empirical Software Engineering and Measurement},
-  year     = {2008},
-  % number   = {},
-  % pages    = {},
-  month    = {10},
-  % note     = {},
-  % volume   = {},
-  language = {english}
+  author        = {S. Heckman and L. Williams.},
+  title         = {On establishing a benchmark for evaluating static analysis alert prioritization and classification techniques},
+  journal       = {In Proc. of the Second ACM-IEEE International Symposium on Empirical Software Engineering and Measurement},
+  year          = {2008},
+  month         = {10},
+  language      = {english}
 }
 
 @article{BegBunch,
-  author   = {Cristina Cifuentes and Christian Hoermann and  Nathan Keynes and  Lian Li},
-  title    = {BegBunch: Benchmarking for C bug detection tools},
-  journal  = {},
-  year     = {2009},
-  number   = {},
-  pages    = {},
-  month    = {},
-  note     = {},
-  doi = {10.1145/1555860.1555866},
-  volume   = {},
-  language = {english}
+  author        = {Cristina Cifuentes and Christian Hoermann and  Nathan Keynes and  Lian Li},
+  title         = {BegBunch: Benchmarking for C bug detection tools},
+  journal       = {},
+  year          = {2009},
+  number        = {},
+  pages         = {},
+  month         = {},
+  note          = {},
+  doi           = {10.1145/1555860.1555866},
+  volume        = {},
+  language      = {english}
 }
 
+% Testing 
 @article{Hetzel,
-  author   = {David Gelperin and Bill Hetzel},
-  title    = {The growth of software testing},
-  journal  = {Commun. ACM},
-  year     = {1988},
-  number   = {31},
-  pages    = {687–695},
-  month    = {},
-  note     = {},
-  volume   = {6},
-  language = {english}
+  author        = {David Gelperin and Bill Hetzel},
+  title         = {The growth of software testing},
+  journal       = {Commun. ACM},
+  year          = {1988},
+  number        = {31},
+  pages         = {687–695},
+  month         = {},
+  note          = {},
+  volume        = {6},
+  language      = {english}
 }
 
 @article{Baker,
-  author   = {Baker C.},
-  title    = {Review of D.D. McCracken’s “Digital Computer Programming”},
-  journal  = {Mathematical Tables and Other Aids to Computation},
-  year     = {1957},
-  number   = {1},
-  pages    = {298–305},
-  month    = {10},
-  note     = {},
-  volume   = {60},
-  language = {english}
+  author        = {Baker C.},
+  title         = {Review of D.D. McCracken’s “Digital Computer Programming”},
+  journal       = {Mathematical Tables and Other Aids to Computation},
+  year          = {1957},
+  number        = {1},
+  pages         = {298–305},
+  month         = {10},
+  note          = {},
+  volume        = {60},
+  language      = {english}
+}
+
+% IR Analysis
+@InProceedings{10.1007/978-3-642-27705-4_12,
+  author        = "Merz, Florian and Falke, Stephan and Sinz, Carsten",
+  editor        = "Joshi, Rajeev and M{\"u}ller, Peter and Podelski, Andreas",
+  title         = "LLBMC: Bounded Model Checking of C and C++ Programs Using a Compiler IR",
+  booktitle     = "Verified Software: Theories, Tools, Experiments",
+  year          = "2012",
+  publisher     = "Springer Berlin Heidelberg",
+  address       = "Berlin, Heidelberg",
+  pages         = "146--161",
+  isbn          = "978-3-642-27705-4"
+}
+
+@article{Chow2013IR,
+  author        = {Chow, Fred},
+  year          = {2013},
+  month         = {12},
+  pages         = {57-62},
+  title         = {Intermediate Representation},
+  volume        = {56},
+  journal       = {Communications of the ACM},
+  doi           = {10.1145/2534706.2534720}
+}
+
+% Binary Analysis
+@inproceedings{Zeng2012StaticAO,
+  title         = {Static Analysis on Binary Code},
+  author        = {Bin Zeng},
+  year          = {2012}
+}
+
+@article{Valgrind2008,
+  author        = {Cabecinhas, Filipe and Lopes, Nuno and Crisostomo, Renato and Veiga, Luís},
+  year          = {2008},
+  month         = {11},
+  pages         = {},
+  title         = {Optimizing Binary Code Produced by Valgrind (Project Report on Virtual Execution Environments Course - AVExe)}
+}
+
+@book{10.5555/1481438, 
+  author        = {Eagle, Chris}, 
+  title         = {The IDA Pro Book: The Unofficial Guide to the World's Most Popular Disassembler}, 
+  year          = {2008}, 
+  isbn          = {1593271786}, 
+  publisher     = {No Starch Press}, 
+  address       = {USA}
 }
 
 % template
 @article{t4,
-  author   = {},
-  title    = {},
-  journal  = {},
-  year     = {},
-  number   = {},
-  pages    = {},
-  month    = {},
-  note     = {},
-  volume   = {},
-  language = {english}
+  author        = {},
+  title         = {},
+  journal       = {},
+  year          = {},
+  number        = {},
+  pages         = {},
+  month         = {},
+  note          = {},
+  doi           = {},
+  volume        = {},
+  language      = {english}
 }
 
 % template
 @article{t41,
-  author   = {peter adams},
-  title    = {the title of the work},
-  journal  = {the name of the journal},
-  year     = {1993},
-  number   = {2},
-  pages    = {201-213},
-  month    = {7},
-  note     = {an optional note},
-  volume   = {4},
-  language = {english}
+  author        = {peter adams},
+  title         = {the title of the work},
+  journal       = {the name of the journal},
+  year          = {1993},
+  number        = {2},
+  pages         = {201-213},
+  month         = {7},
+  note          = {an optional note},
+  volume        = {4},
+  language      = {english}
 }
 
 %--------------------------------------------------------------------
 % 5. books
 @book{Myers2004,
-  author = {G. J. Myers},
-  title = {The art of software testing. Second edition.},
-  address = {New Jersey},
-  publisher = {john wilson and sons inc. hoboken},
-  year = {2004},
-  numpages = {151},
-  language = {english}
+  author        = {G. J. Myers},
+  title         = {The art of software testing. Second edition.},
+  address       = {New Jersey},
+  publisher     = {john wilson and sons inc. hoboken},
+  year          = {2004},
+  numpages      = {151},
+  language      = {english}
 }
 
 @book{Myers1979,
-  author = {G. J. Myers},
-  title = {The Art of Software Testing},
-  address = {New York},
-  % publisher = {},
-  year = {1979},
-  numpages = {177},
-  language = {english}
+  author        = {G. J. Myers},
+  title         = {The Art of Software Testing},
+  address       = {New York},
+  year          = {1979},
+  numpages      = {177},
+  language      = {english}
 }
 % template
 @book{t5,
-  author = {},
-  title = {},
-  address = {},
-  publisher = {},
-  year = {},
-  numpages = {},
-  language = {}
+  author        = {},
+  title         = {},
+  address       = {},
+  publisher     = {},
+  year          = {},
+  numpages      = {},
+  language      = {}
 }
 
 %--------------------------------------------------------------------
-% 6. standarts
+% 6. Standarts
 @book{IEC61508,
-  title = {iec 61508-1:2010: functional safety of electrical electronic/programmable electronic safety-related systems},
-  address = {geneva, switzerland: iec},
-  publisher = {iec},
-  year = {2010},
-  language = {english}
+  title         = {iec 61508-1:2010: functional safety of electrical electronic/programmable electronic safety-related systems},
+  address       = {geneva, switzerland: iec},
+  publisher     = {iec},
+  year          = {2010},
+  language      = {english}
 }
 
 @book{ISOIEC99899in1990,
-  title = {IEC 9899:1990: Programming Languages - C},
-  address = {C. Geneva, Switzerland},
-  publisher = {ISO/IEC},
-  year = {1990},
-  language = {english}
+  title         = {IEC 9899:1990: Programming Languages - C},
+  address       = {C. Geneva, Switzerland},
+  publisher     = {ISO/IEC},
+  year          = {1990},
+  language      = {english}
 }
 
 @book{ISOIEC99899in1999,
-  title = {IEC 9899:1999: Programming Languages - C},
-  address = {C. Geneva, Switzerland},
-  publisher = {ISO/IEC},
-  year = {1999},
-  language = {english}
+  title         = {IEC 9899:1999: Programming Languages - C},
+  address       = {C. Geneva, Switzerland},
+  publisher     = {ISO/IEC},
+  year          = {1999},
+  language      = {english}
 }
 
 % template
 @book{t6,
-  title = {},
-  address = {},
-  publisher = {},
-  year = {},
-  numpages = {},
-  language = {english}
+  title         = {},
+  address       = {},
+  publisher     = {},
+  year          = {},
+  numpages      = {},
+  language      = {english}
 }
 
 %--------------------------------------------------------------------
 % 7. conferences 
 @conference{astreeConf,
-  author       = {P. Cousot and  R. Cousot and  J. Feret and  A. Min´e},
-  title        = {varieties of static analyzers: a comparison with astree},
-  booktitle    = {first joint ieee/ifip symposium on theoretical aspects of software engineering (tase 2007)},
-  year         = {2007},
-  %editor       = {the editor},
-  %volume       = {4},
-  %series       = {5},
-  pages        = {3-20},
-  address      = {Shanghai, China},
-  month        = {6},
-  organization = {IEEE Computer Society},
-  %publisher    = {The publisher},
-  %note         = {An optional note},
-  language     = {english}
+  author        = {P. Cousot and  R. Cousot and  J. Feret and  A. Min´e},
+  title         = {varieties of static analyzers: a comparison with astree},
+  booktitle     = {first joint ieee/ifip symposium on theoretical aspects of software engineering (tase 2007)},
+  year          = {2007},
+  pages         = {3-20},
+  address       = {Shanghai, China},
+  month         = {6},
+  organization  = {IEEE Computer Society},
+  language      = {english}
 }
 
 % template
 @CONFERENCE{T7,
-  author       = {},
-  title        = {},
-  booktitle    = {},
-  year         = {},
-  editor       = {},
-  volume       = {},
-  series       = {},
-  pages        = {},
-  address      = {},
-  month        = {},
-  organization = {},
-  publisher    = {},
-  note         = {},
-  language     = {english}
+  author        = {},
+  title         = {},
+  booktitle     = {},
+  year          = {},
+  editor        = {},
+  volume        = {},
+  series        = {},
+  pages         = {},
+  address       = {},
+  month         = {},
+  organization  = {},
+  publisher     = {},
+  note          = {},
+  language      = {english}
 }
 
 % template
 @CONFERENCE{T71,
-  author       = {Peter Draper},
-  title        = {The title of the work},
-  booktitle    = {The title of the book},
-  year         = {1993},
-  editor       = {The editor},
-  volume       = {4},
-  series       = {5},
-  pages        = {213},
-  address      = {The address of the publisher},
-  month        = {7},
-  organization = {The organization},
-  publisher    = {The publisher},
-  note         = {An optional note},
-  language     = {english}
+  author        = {Peter Draper},
+  title         = {The title of the work},
+  booktitle     = {The title of the book},
+  year          = {1993},
+  editor        = {The editor},
+  volume        = {4},
+  series        = {5},
+  pages         = {213},
+  address       = {The address of the publisher},
+  month         = {7},
+  organization  = {The organization},
+  publisher     = {The publisher},
+  note          = {An optional note},
+  language      = {english}
 }
 
 %--------------------------------------------------------------------
@@ -1076,7 +1100,7 @@
 }
 
 % doi with (), author with umlaut or other unicode or specific symbols, 9 authors
-% latex don'Mt like Gösele1999161 in ref
+% latex don' Mt like Gösele1999161 in ref
 % Умляуты в авторах понимаются из-за поддержки в юникодной странице pdflatex и xelatex
 % Иллюстрация того, что будет. если на английской записи будут поставлена пометка, что язык русский
 @article{Gosele1999161,

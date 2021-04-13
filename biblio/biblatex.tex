@@ -28,8 +28,11 @@ sorting=none,% настройка сортировки списка литера
 % defernumbers=true, % откомментируйте, если требуется правильная нумерация ссылок на литературу в режиме черновика. Замедляет сборку
 ]{biblatex}[2016/09/17]%
 }
-\makeatother
 
+\makeatother
+\AtEveryBibitem{%
+  \clearfield{note}%
+}
 \providebool{blxmc} % biblatex version needs and has MakeCapital workaround
 \boolfalse{blxmc} % setting our new boolean flag to default false
 \ifxetexorluatex
